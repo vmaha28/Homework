@@ -3,13 +3,16 @@ package fast.track;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 public class HomeworkCurs6 {
     public static void main(String[] args) {
         //Ex1();
         //Ex2();
-        Ex3();
+        //Ex3();
+        //Ex4(80);
+        Ex5(100, 1);
 
 
     }
@@ -57,7 +60,30 @@ public class HomeworkCurs6 {
                 System.out.println(list.get(i));
             }
         }
+    }
 
+    public static void Ex4(int donatii) {
+
+        Random r = new Random();
+        int totalDonatii = 0;
+        while (donatii > totalDonatii) {
+            totalDonatii += r.nextInt(donatii);
+        }
+        System.out.println("Targetul a fost atins " + totalDonatii + " atat am strans!");
+
+
+    }
+
+    public static void Ex5(int donatii, int contor) {
+
+        Random r = new Random();
+        int totalDonatii = 0;
+        for (int i = 0; i < contor; i++) {
+            if (totalDonatii < donatii) {
+                totalDonatii += r.nextInt(donatii);
+            }
+        }
+        System.out.println("S-a strans suma de " + totalDonatii + " ,asta este");
 
 
     }
