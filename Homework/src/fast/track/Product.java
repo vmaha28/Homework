@@ -34,11 +34,13 @@ public class Product {
     }
 
     public String getCategory() {
+
         return category;
     }
     public boolean hasShock(){
         if(quantity>0){
            return true;
+
 
         }else{
             return false;

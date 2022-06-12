@@ -24,6 +24,17 @@ public class Main {
         System.out.println(Person3.getAge());
         System.out.println(Person3.getMarried());
 
+        Product Product1=new Product();
+        Product1.setName("Detergent");
+        Product1.setPrice(10);
+        Product1.setQuantity(0);
+        Product1.setCategory("Alimentar");
+        System.out.println(Product1.getName());
+        System.out.println(Product1.getPrice());
+        System.out.println(Product1.getQuantity());
+        System.out.println(Product1.getCategory());
+        Product1.isCategory("Alimentar");
+
 
 
     }
