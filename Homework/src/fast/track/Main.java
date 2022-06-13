@@ -35,6 +35,13 @@ public class Main {
         System.out.println(Product1.getCategory());
         Product1.isCategory("Alimentar");
 
+        Bottle Bottle=new Bottle(120,true);
+        Bottle.emptyVolume();
+        System.out.println(Bottle.getAvailableLiquid());
+        Bottle.drink(50);
+        System.out.println(Bottle.getAvailableLiquid());
+
+
 
 
     }
